@@ -8,7 +8,9 @@ export default class BotaoIcone extends React.Component{
     var { altura, largura } = this.props; 
 
     return (
-      <TouchableOpacity>
+      <TouchableOpacity onPress={
+        console.log('teste')
+      }>
       <Image source={icone} style={{ height: altura, width: largura}}/>
       </TouchableOpacity>
     );

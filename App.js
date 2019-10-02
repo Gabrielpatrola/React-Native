@@ -18,7 +18,7 @@ export default class App extends React.Component {
         </Text>
         <Card>
         <Button title={'Botão'}></Button>
-        <BotaoIcone altura={80} largura={80}></BotaoIcone>
+        <View style={styles.direita} ><BotaoIcone altura={80} largura={80}></BotaoIcone></View>
           <AssetExample />
         </Card>
       </View>
@@ -40,4 +40,8 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
   },
+  direita: {
+    position: 'absolute',
+    right:0,
+  }
 });
